@@ -11,7 +11,4 @@
 </template>
 
 <style scoped>
-.logo :hover{
-  color: black
-}
 </style>

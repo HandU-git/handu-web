@@ -1,12 +1,20 @@
 <template>
   <div>
-    내용1
+    <MainPoster/>
+    <CompanyIntro/>
   </div>
 </template>
 
 <script>
-export default {
+import MainPoster from '@/components/MainPoster.vue';
+import CompanyIntro from '@/components/CompanyIntro.vue';
 
+
+export default {
+    components: {
+        MainPoster,
+        CompanyIntro,
+    },
 }
 </script>
 

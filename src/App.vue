@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ToolBar />
+    <ToolBar></ToolBar>
     <router-view></router-view>
   </div>
 </template>
@@ -14,22 +14,16 @@ export default {
   components: {
     ToolBar,
   },
-
-  data: () => ({
-    //
-  }),
+  methods: {
+    isWide() {
+      return window.innerWidth > 650 ? true : false;
+    },
+  }
 };
 </script>
 
 <style>
 body {
   font-family: "Noto Sans KR", sans-serif;
-}
-
-a {
-  text-align: center;
-  margin : 15px 0px 0px 0px;
-  cursor: pointer;
-  font-weight: 700;
 }
 </style>

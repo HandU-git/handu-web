@@ -9,6 +9,7 @@ npm install axios
 
 ## vuex 설치
 npm i vuex@3.6.2
+*Vuex를 설치할 때 버전을 명시해줘야한다.
 
 ## vuetify 설치
 npm i vuetify
