@@ -4,7 +4,8 @@ import HomeView from '../views/HomeView.vue';
 
 Vue.use(VueRouter);
 
-const PortfolioView = () => import(/* webpackChunkName: "login" */ '../views/PortfolioView.vue');
+const PortfolioView = () => import(/* webpackChunkName: "portfolio" */ '../views/PortfolioView.vue');
+const DemoView = () => import(/* webpackChunkName: "demo" */ '../views/DemoView.vue');
 
 export const router = new VueRouter({
     mode: 'history',
@@ -24,6 +25,11 @@ export const router = new VueRouter({
             name: 'portfolio',
             path: '/portfolio',
             component: PortfolioView,
+        },  
+        {
+            name: 'demo',
+            path: '/demo',
+            component: DemoView,
         },  
         {
             path: '/*',
