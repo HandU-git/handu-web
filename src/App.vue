@@ -15,9 +15,6 @@ export default {
     ToolBar,
   },
   methods: {
-    isWide() {
-      return window.innerWidth > 650 ? true : false;
-    },
   }
 };
 </script>

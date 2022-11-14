@@ -2,24 +2,30 @@
   <div>
     <MainPoster/>
     <CompanyIntro/>
-    <AboutTabVue/>
-    <AppFooterVue/>
+    <AboutTab/>
+    <TechTab/>
+    <ContactTab/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
 import MainPoster from '@/components/MainPoster.vue';
 import CompanyIntro from '@/components/CompanyIntro.vue';
-import AboutTabVue from '@/components/AboutTab.vue';
-import AppFooterVue from '@/components/AppFooter.vue';
+import AboutTab from '@/components/AboutTab.vue';
+import TechTab from '@/components/TechTab.vue';
+import AppFooter from '@/components/AppFooter.vue';
+import ContactTab from '@/components/ContactTab.vue';
 
 
 export default {
     components: {
         MainPoster,
         CompanyIntro,
-        AboutTabVue,
-        AppFooterVue,
+        TechTab,
+        AboutTab,
+        ContactTab,
+        AppFooter,
     },
 }
 </script>

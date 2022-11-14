@@ -1,5 +1,5 @@
 <template>
-  <div class="user-wrap">
+  <div class="wrapper">
     <div class="head">ABOUT</div>
     <div class="catch">핸듀만의 차별화된 기술, 당신만을 위한 서비스</div>
     <div class="container1">
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.user-wrap {
+.wrapper {
   width: 100%;
   padding-top: 720px;
   position: relative;
