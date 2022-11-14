@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <contact-form class="form"></contact-form>
     <kakao-map class="map"></kakao-map>
   </div>
@@ -18,14 +18,24 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.wrapper {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 720px;
-    /* background-color: #FAF7F7; */
+    margin: 0px;
+    padding: 0px;
     background-color: #FAF7F7;
 }
+
+.form {
+  padding: 64px 3.7vw 54px  96px;
+}
+
+.map {
+  padding: 78px 39px 86px 0px;
+}
+
 
 
 
