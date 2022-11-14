@@ -33,7 +33,7 @@ export default {
 }
 
 .map {
-  padding: 78px 39px 86px 0px;
+  padding: 64px 39px 86px 0px;
 }
 
 

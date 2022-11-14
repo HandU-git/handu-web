@@ -62,7 +62,7 @@ export default {data() {
 
 #map {
   width: 50vw;
-  height: 505px;
+  height: 488px;
 }
 
 .tel {

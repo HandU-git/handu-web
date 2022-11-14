@@ -23,4 +23,8 @@ export default {
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 </style>
