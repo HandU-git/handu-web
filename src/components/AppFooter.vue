@@ -42,9 +42,13 @@
       <h3 slot="header">알림</h3>
       <div slot="body">
         개설 예정입니다.
-        <v-icon @click="showModal = false" style="left: 100px; top: 20px; color: #392012;"
-          >mdi-check</v-icon
-        >
+        <div style="text-align: right">
+          <v-icon
+            @click="showModal = false"
+            style="top: 20px; color: #392012"
+            >mdi-check</v-icon
+          >
+        </div>
       </div>
     </AlertModal>
   </div>

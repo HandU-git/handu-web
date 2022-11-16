@@ -7,6 +7,7 @@
       <input
         type="checkbox"
         id="chkBox"
+        v-model="agreed"
         style="
           position: relative;
           margin: 7px;
@@ -16,12 +17,17 @@
         "
       />
       <label for="chkBox" style="font-size: 20px"
-        >개인정보 처리방침에 동의합니다.</label
+        >개인정보 처리방침에 동의합니다. (필수)</label
       >
     </div>
     <form ref="form" @submit.prevent="sendEmail">
       <div style="display: flex; margin-bottom: 11px">
-        <input class="input-name" type="text" name="name" placeholder="  이름" />
+        <input
+          class="input-name"
+          type="text"
+          name="name"
+          placeholder="  이름"
+        />
         <input
           class="input-email"
           type="text"
@@ -46,7 +52,7 @@
         />
       </div>
       <div style="text-align: center">
-        <button class="btn" @click="submit">
+        <button class="btn">
           <span style="font-size: 34px">
             <i class="fa-regular fa-envelope"> </i>
           </span>
@@ -61,23 +67,40 @@
 </template>
 
 <script>
+import AlertModal from "./AlertModal.vue";
 import emailjs from "emailjs-com";
 export default {
   data() {
     return {
       agreed: false,
-    }
+    };
   },
   methods: {
     sendEmail() {
-      emailjs.sendForm(`${process.env.VUE_APP_SERVICE_ID}`, `${process.env.VUE_APP_TEMPLATE_ID}`, this.$refs.form, `${process.env.VUE_APP_PUBLIC_KEY}`)
-        .then((result) => {
-            console.log('SUCCESS!', result.text);
-        }, (error) => {
-            console.log('FAILED...', error.text);
-        });
+      if (this.agreed === false) {
+        this.$emit("notAgreed");
+      } else {
+        emailjs
+          .sendForm(
+            `${process.env.VUE_APP_SERVICE_ID}`,
+            `${process.env.VUE_APP_TEMPLATE_ID}`,
+            this.$refs.form,
+            `${process.env.VUE_APP_PUBLIC_KEY}`
+          )
+          .then(
+            (result) => {
+              console.log("SUCCESS!", result.text);
+            },
+            (error) => {
+              console.log("FAILED...", error.text);
+            }
+          );
+      }
     },
-  }
+    components: {
+      AlertModal,
+    },
+  },
 };
 </script>
 
