@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-footer class="wrapper">
+    <v-footer class="footer-wrapper">
       <v-container>
         <v-row>
           <v-col align="center" style="padding-bottom: 0px">
-            <v-img
+            <img
               src="../assets/HandULogo.png"
               alt="불러올 수 없음"
               width="249px"
@@ -91,7 +91,7 @@ v-container {
   top: 237px;
   left: 10%;
 }
-.wrapper {
+.footer-wrapper {
   width: 100%;
   padding-bottom: 200px;
 }
