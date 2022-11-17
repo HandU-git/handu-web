@@ -12,28 +12,46 @@
       <button @click="toDemoPage" class="btn">체험하기</button>
     </div>
     <div class="container2">
-      <img
-        class="item-img2"
-        src="../assets/KiniandLumi.png"
-        alt=""
-      />
+      <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
       <div class="item-title2">핸듀 포트폴리오</div>
       <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
       <button @click="toPortfolio" class="btn">자세하게</button>
     </div>
+    <AlertModal v-if="showModal" @close="showModal = false">
+      <h3 slot="header">알림</h3>
+      <div slot="body">
+        준비중입니다.
+        <div style="text-align: right">
+          <v-icon @click="showModal = false" style="top: 20px; color: #392012"
+            >mdi-check</v-icon
+          >
+        </div>
+      </div>
+    </AlertModal>
   </div>
 </template>
 
 <script>
+import AlertModal from './common/AlertModal.vue';
+
 export default {
+  data() {
+    return {
+      showModal: false,
+    };
+  },
   methods: {
     toDemoPage() {
-      this.$router.push("/demo");
+      this.showModal = !this.showModal;
     },
     toPortfolio() {
       this.$router.push("/portfolio");
     },
   },
+
+  components: {
+    AlertModal,
+  }
 };
 </script>
 
