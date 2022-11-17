@@ -1,7 +1,7 @@
 <template>
   <div class="user-wrap">
     <div class="user-image">
-      <img src="../assets/메인.png" alt="불러올 수 없음" />
+      <img src="../assets/main.png" alt="불러올 수 없음" />
     </div>
     <div>
       <p class="text1">We Are HandU</p>

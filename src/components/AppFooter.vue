@@ -5,7 +5,7 @@
         <v-row>
           <v-col align="center" style="padding-bottom: 0px">
             <v-img
-              src="../assets/핸듀_텍스트_투명배경 1.png"
+              src="../assets/HandULogo.png"
               alt="불러올 수 없음"
               width="249px"
             />

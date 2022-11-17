@@ -3,7 +3,7 @@
     <div class="head">ABOUT</div>
     <div class="catch">핸듀만의 차별화된 기술, 당신만을 위한 서비스</div>
     <div class="container1">
-      <img class="item-img1" src="../assets/아이템_OCR.png" alt="" />
+      <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
       <div class="item-title1">OCR 손글씨 자동교정</div>
       <div class="item-body1">
         핸듀만의 기술로 높은 인식률을 자랑하는 OCR. <br />
@@ -14,7 +14,7 @@
     <div class="container2">
       <img
         class="item-img2"
-        src="../assets/아이템_킨더룸.png"
+        src="../assets/KiniandLumi.png"
         alt=""
       />
       <div class="item-title2">핸듀 포트폴리오</div>
