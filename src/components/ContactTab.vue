@@ -57,7 +57,7 @@ export default {
 }
 
 .form {
-  padding: 64px 3.7vw 54px 96px;
+  padding: 64px 6vw 54px 10vw;
 }
 
 .map {

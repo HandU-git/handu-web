@@ -35,8 +35,8 @@ export default {};
 .grey {
   position: absolute;
   top: 112px;
-  left: 8.3vw;
-  width: 43.8vw;
+  left: 11.8vw;
+  width: 41vw;
   height: 415px;
   background-color: #666666;
 }
@@ -45,8 +45,8 @@ export default {};
   position: absolute;
   text-align: center;
   top: 223px;
-  left: 52.1vw;
-  width: 43.8vw;
+  left: 52.8vw;
+  width: 35.3vw;
   height: 375px;
   background-color: #ffffff;
 }

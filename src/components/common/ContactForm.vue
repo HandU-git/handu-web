@@ -148,21 +148,21 @@ textarea {
 
 .input-name {
   font-size: 20px;
-  width: 246px;
-  margin-right: 36px;
+  width: 210px;
+  margin-right: 33px;
 }
 .input-email {
   font-size: 20px;
-  width: 246px;
+  width: 210px;
 }
 
 .input-title {
-  width: 528px;
+  width: 453px;
   margin-bottom: 17px;
 }
 
 .input-content {
-  width: 528px;
+  width: 453px;
   height: 182px;
   margin-bottom: 32px;
 }

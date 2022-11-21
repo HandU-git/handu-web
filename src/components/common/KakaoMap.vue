@@ -82,11 +82,11 @@ export default {
 
 <style scoped>
 .wrapper {
-  width: 50vw;
+  width: 42.1vw;
 }
 
 #map {
-  width: 50vw;
+  width: 42.1vw;
   height: 488px;
 }
 
