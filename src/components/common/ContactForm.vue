@@ -107,7 +107,7 @@ export default {
 <style scoped>
 .title {
   font-weight: 500;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 65px;
   color: #312df4;
 }
@@ -117,7 +117,7 @@ export default {
 
 .head {
   font-weight: 300;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .handu {
