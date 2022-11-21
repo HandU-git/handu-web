@@ -20,9 +20,9 @@
       <div class="slide-body">
         <slot name="left-body">dafault body</slot>
       </div>
-      <img class="slide-main-image" src="" alt="메인사진" />
+      <img class="slide-main-image" :src="require(`../../assets/${leftItem.main}`)" alt="메인사진" />
     </div>
-    <div class="slide-item">
+    <div v-if="rightItem" class="slide-item">
       <div class="slide-title">
         {{ rightItem.title }}
       </div>
@@ -42,7 +42,10 @@
       <div class="slide-body">
         <slot name="right-body">dafault body</slot>
       </div>
-      <img class="slide-main-image" src="" alt="메인사진" />
+      <img class="slide-main-image" :src="require(`../../assets/${rightItem.main}`)" alt="메인사진" />
+    </div>
+    <div v-else class="slide-empty">
+
     </div>
   </div>
 </template>
@@ -63,6 +66,14 @@ export default {
   height: 430px;
   margin: 1.5vw;
   background-color: #ffffff;
+}
+
+
+.slide-empty {
+  position: relative;
+  width: 47vw;
+  height: 430px;
+  margin: 1.5vw;
 }
 .slide-title {
   padding: 100px 0px 0px 43px;
@@ -92,7 +103,8 @@ export default {
 
 .slide-main-image {
     position: absolute;
-    left: 50%;
+    left: 53.6%;
     top: 96px;
+    width: 18.9vw;
 }
 </style>
