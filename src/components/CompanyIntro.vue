@@ -1,19 +1,24 @@
 <template>
-  <div class="user-wrap">
+  <div class="user-wrap" data-aos="fade-up">
     <div class="user-image">
-      <img src="../assets/companyPhoto.png" alt="불러올 수 없음" />
+      <img
+        src="../assets/companyPhoto.png"
+        alt="불러올 수 없음"
+      />
     </div>
     <div>
       <p class="text1">We Are</p>
       <p class="text2">HandU</p>
       <p class="text3">(주)핸듀</p>
       <p class="text4">
-        핸듀는 2021년에 설립된 기업이며, 우리가 살아가는데 도움이 되는 AI기술을 만들어 
-        어려움을 겪고 있는 사람들에게 도움의 손길을 내밀어주고, 
-        우리의 삶 속에서 AI 기술을 발전시키기 위해 노력하고 있습니다. 
-        <br><br>
-        유아 교육 분야에서 혁신을 위한 AI 모델을 개발하고 있으며 추후 나아가 청소년, 성인, 노인이 겪는 어려움을 해결하기 위한 COMPUTER VISION 서비스를 제공할 예정입니다.
-    </p>
+        핸듀는 2021년에 설립된 기업이며, 우리가 살아가는데 도움이 되는 AI기술을
+        만들어 어려움을 겪고 있는 사람들에게 도움의 손길을 내밀어주고, 우리의 삶
+        속에서 AI 기술을 발전시키기 위해 노력하고 있습니다.
+        <br /><br />
+        유아 교육 분야에서 혁신을 위한 AI 모델을 개발하고 있으며 추후 나아가
+        청소년, 성인, 노인이 겪는 어려움을 해결하기 위한 COMPUTER VISION
+        서비스를 제공할 예정입니다.
+      </p>
       <hr class="straight1" size="1" width="30.81%" />
       <hr class="straight2" size="1" width="7.7%" />
     </div>

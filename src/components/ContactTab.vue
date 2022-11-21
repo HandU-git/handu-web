@@ -1,10 +1,13 @@
 <template>
   <div class="wrapper">
     <contact-form
+    data-aos="fade-right"
       class="form"
       @notAgreed="modalOn"
     ></contact-form>
-    <kakao-map class="map"></kakao-map>
+    <kakao-map 
+    data-aos="fade-left"
+    class="map"></kakao-map>
     <AlertModal v-if="showModal" @close="showModal = false">
       <h3 slot="header">알림</h3>
       <div slot="body">

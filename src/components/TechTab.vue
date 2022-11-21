@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="white"></div>
-    <div class="grey"></div>
-    <div class="item-container">
+    <div data-aos="fade-down" class="grey"></div>
+    <div data-aos="fade-up" class="item-container">
       <div class="item-title">TECHNOLOGY</div>
       <div class="item-subtitle">차별화된 OCR기술</div>
       <div class="item-body">

@@ -1,6 +1,9 @@
 <template>
   <div>
-    <MainPoster/>
+    <MainPoster 
+    data-aos="fade-down"
+    data-aos-once="true"
+    />
     <CompanyIntro/>
     <AboutTab/>
     <TechTab/>

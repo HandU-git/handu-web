@@ -1,6 +1,8 @@
 <template>
   <div class="slide-container">
-    <div class="slide-item">
+    <div data-aos="fade-right" 
+    data-aos-offset="200"
+    class="slide-item">
       <div class="slide-title">
         {{ leftItem.title }}
       </div>
@@ -22,7 +24,10 @@
       </div>
       <img class="slide-main-image" :src="require(`../../assets/${leftItem.main}`)" alt="메인사진" />
     </div>
-    <div v-if="rightItem" class="slide-item">
+    <div 
+    data-aos="fade-left"
+    data-aos-offset="200"
+     v-if="rightItem" class="slide-item">
       <div class="slide-title">
         {{ rightItem.title }}
       </div>

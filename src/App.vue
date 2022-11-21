@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-
     <ToolBar></ToolBar>
     <router-view></router-view>
-
   </div>
 </template>
 
@@ -16,8 +14,7 @@ export default {
   components: {
     ToolBar,
   },
-  methods: {
-  }
+  methods: {},
 };
 </script>
 

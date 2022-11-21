@@ -1,8 +1,9 @@
 <template>
   <div class="wrapper">
-    <div class="head">ABOUT</div>
-    <div class="catch">핸듀만의 차별화된 기술, 당신만을 위한 서비스</div>
-    <div class="container1">
+    <div data-aos="fade-down" class="head">ABOUT</div>
+    <div data-aos="fade-down" class="catch">핸듀만의 차별화된 기술, 당신만을 위한 서비스</div>
+    <div class="container1"
+    data-aos="fade-right">
       <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
       <div class="item-title1">OCR 손글씨 자동교정</div>
       <div class="item-body1">
@@ -11,7 +12,8 @@
       </div>
       <button @click="toDemoPage" class="btn">체험하기</button>
     </div>
-    <div class="container2">
+    <div class="container2"
+    data-aos="fade-left">
       <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
       <div class="item-title2">핸듀 포트폴리오</div>
       <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
