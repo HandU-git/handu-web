@@ -2,11 +2,13 @@
   <div class="wrapper">
     <contact-form
     data-aos="fade-right"
+    data-aos-offset="300"
       class="form"
       @notAgreed="modalOn"
     ></contact-form>
     <kakao-map 
     data-aos="fade-left"
+    data-aos-offset="300"
     class="map"></kakao-map>
     <AlertModal v-if="showModal" @close="showModal = false">
       <h3 slot="header">알림</h3>

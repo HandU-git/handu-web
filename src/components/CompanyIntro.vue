@@ -1,5 +1,8 @@
 <template>
-  <div class="user-wrap" data-aos="fade-up">
+  <div class="user-wrap" 
+  data-aos="fade-up"
+  data-aos-offset="300"
+  >
     <div class="user-image">
       <img
         src="../assets/companyPhoto.png"
