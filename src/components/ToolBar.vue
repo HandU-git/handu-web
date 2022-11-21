@@ -72,6 +72,7 @@ export default {
     async scroll(position) {
       if (this.$route.name === "portfolio") {
         await router.push('/home');
+        return;
       }
       window.scrollTo(position.x, this.calPosY(position.y));
     },

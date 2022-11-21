@@ -1,9 +1,10 @@
 <template>
   <div>
-    <MainPoster 
-    data-aos="fade-down"
+    <div
+    data-aos="fade-up"
     data-aos-once="true"
-    />
+    data-aos-offset="10">
+    <MainPoster/></div>
     <CompanyIntro/>
     <AboutTab/>
     <TechTab/>

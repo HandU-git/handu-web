@@ -15,9 +15,11 @@ new Vue({
   router,
   store,
   mounted() {
-    AOS.init({
-      duration: 1000,
-      offset: 1000,
-    });
+    setTimeout(() => {
+      AOS.init({
+        duration: 1000,
+        offset: 200,
+      }) 
+    },300)    
   },
 }).$mount('#app')
