@@ -44,8 +44,9 @@ export default {
     toDemoPage() {
       this.showModal = !this.showModal;
     },
-    toPortfolio() {
-      this.$router.push("/portfolio");
+    async toPortfolio() {
+      await this.$router.push("/portfolio");
+      window.scrollTo(0, 0);
     },
   },
 

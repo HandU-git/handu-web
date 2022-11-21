@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar height="80">
+    <v-app-bar height="80" fixed>
       <v-container>
         <v-row>
           <v-spacer></v-spacer>
@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     calPosY(y) {
-      let To = 80;
+      let To = -40;
       if(y < 3)
         To += y * window.innerWidth * 0.5;
       else
