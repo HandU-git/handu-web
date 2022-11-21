@@ -7,7 +7,7 @@
           <span class="highlight">TEL :</span>
           02-8474-9374
         </span>
-        <span class="email" style="padding-left: 12vw">
+        <span class="email" style="padding-left: 6vw">
           <span class="highlight">E-mail : </span>dsnds@handu.io
         </span>
       </div>

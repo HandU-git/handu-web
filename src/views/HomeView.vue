@@ -10,6 +10,7 @@
     <TechTab/>
     <ContactTab/>
     <AppFooter/>
+    <SnsIcons/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import AboutTab from '@/components/AboutTab.vue';
 import TechTab from '@/components/TechTab.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import ContactTab from '@/components/ContactTab.vue';
+import SnsIcons from '@/components/common/SnsIcons.vue';
 
 
 export default {
@@ -30,10 +32,10 @@ export default {
         AboutTab,
         ContactTab,
         AppFooter,
+        SnsIcons,
     },
 }
 </script>
 
 <style>
-
 </style>
