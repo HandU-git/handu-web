@@ -17,7 +17,7 @@ new Vue({
   mounted() {
     AOS.init({
       duration: 1000,
-      offset: 800,
+      offset: 1000,
     });
   },
 }).$mount('#app')
