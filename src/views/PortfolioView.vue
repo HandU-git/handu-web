@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: #e7e5e5">
-    <div style="text-align: center">
+    <div style="text-align: center; padding-top: 100px;">
       <div class="portfolio-header">포트폴리오</div>
     </div>
     <div style="align-items: center">
