@@ -2,17 +2,16 @@
   <div class="wrapper">
     <div>
       <div id="map"></div>
-      <div>
+      <div class="tel-container">
         <span class="tel">
-          <span class="highlight">TEL :</span>
-          02-8474-9374
+          <span class="highlight">TEL:</span>
+          <span> 02-8474-9374</span>
         </span>
         <span class="email" style="padding-left: 6vw">
-          <span class="highlight">E-mail : </span>dsnds@handu.io
+          <span class="highlight">E-mail:</span>
+          <span> yap030@handu.io</span>
         </span>
       </div>
-
-      <div></div>
     </div>
   </div>
 </template>
@@ -33,7 +32,7 @@ export default {
       const container = document.getElementById("map");
       const options = {
         center: new kakao.maps.LatLng(this.comPos.Lat, this.comPos.Lng),
-        level: 8,
+        level: 3,
       };
       this.map = new kakao.maps.Map(container, options);
       const markerPosition = new kakao.maps.LatLng(
@@ -99,6 +98,11 @@ export default {
 }
 
 .highlight {
-  font-weight: 500;
+  font-family: 'NanumBarunGothicBold';
+}
+
+.tel-container {
+  padding-top: 25px;
+  text-align: center;
 }
 </style>
