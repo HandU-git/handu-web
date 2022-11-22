@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     calPosY(y) {
-      let To = -40;
+      let To = 10;
       if(y < 3)
         To += y * window.innerWidth * 0.5;
       else

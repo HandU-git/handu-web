@@ -1,26 +1,19 @@
 <template>
-  <div class="user-wrap" 
-  data-aos="fade-up"
-  data-aos-offset="300"
-  >
+  <div class="user-wrap" data-aos="fade-up" data-aos-offset="300">
     <div class="user-image">
-      <img
-        src="../assets/companyPhoto.png"
-        alt="불러올 수 없음"
-      />
+      <img src="../assets/companyPhoto.png" alt="불러올 수 없음" />
     </div>
     <div>
       <p class="text1">We Are</p>
       <p class="text2">HandU</p>
       <p class="text3">(주)핸듀</p>
       <p class="text4">
-        핸듀는 2021년에 설립된 기업이며, 우리가 살아가는데 도움이 되는 AI기술을
-        만들어 어려움을 겪고 있는 사람들에게 도움의 손길을 내밀어주고, 우리의 삶
-        속에서 AI 기술을 발전시키기 위해 노력하고 있습니다.
-        <br /><br />
-        유아 교육 분야에서 혁신을 위한 AI 모델을 개발하고 있으며 추후 나아가
-        청소년, 성인, 노인이 겪는 어려움을 해결하기 위한 COMPUTER VISION
-        서비스를 제공할 예정입니다.
+        핸듀에 오신 걸 환영합니다! 😀
+        <br/><br/>
+        언제 어디서나 편하고 쉽게 언어를 배우기 위해 학습자의 흥미를 더욱 높이는
+        학습 솔루션을 제공합니다. 🙌
+        <br/><br/>
+        현재 젊은 man power를 강점으로 AI 기술 기반 솔루션 및 서비스 개발을 진행 중이고, 고객들과 협력사들을 확보한 사업을 진행하고 있습니다.
       </p>
       <hr class="straight1" size="1" width="30.81%" />
       <hr class="straight2" size="1" width="7.7%" />
@@ -42,14 +35,14 @@ export default {};
 .user-wrap img {
   position: absolute;
   width: 37.2%;
-  top: 16.4%;
+  top: 16.3%;
   left: 46.5%;
 }
 
 .text1 {
   position: absolute;
   color: #000000;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   font-size: 3.4vw;
   text-align: center;
@@ -59,6 +52,7 @@ export default {};
 .text2 {
   position: absolute;
   color: #000000;
+  font-weight: 600;
   font-size: 1.7vw;
   top: 35%;
   left: 15.7%;
@@ -67,6 +61,7 @@ export default {};
 .text3 {
   position: absolute;
   color: #000000;
+  font-weight: 400;
   font-size: 2.1vw;
   top: 43.3%;
   left: 15.7%;
@@ -75,10 +70,12 @@ export default {};
 .text4 {
   position: absolute;
   color: #000000;
-  font-size: 1.4vw;
+  font-size: 1.38vw;
+  font-weight: 300;
   width: 30.2vw;
   top: 51.25%;
   left: 15.7%;
+  line-height: 22.98px;
 }
 
 .straight1 {

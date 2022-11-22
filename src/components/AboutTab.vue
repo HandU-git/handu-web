@@ -1,23 +1,25 @@
 <template>
   <div class="wrapper">
     <div data-aos="fade-down" class="head">ABOUT</div>
-    <div data-aos="fade-down" class="catch">핸듀만의 차별화된 기술, 당신만을 위한 서비스</div>
-    <div class="container1"
-    data-aos="fade-right">
-      <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
-      <div class="item-title1">OCR 손글씨 자동교정</div>
-      <div class="item-body1">
-        핸듀만의 기술로 높은 인식률을 자랑하는 OCR. <br />
-        손글씨 자동 교정을 체험해 보세요.
-      </div>
-      <button @click="toDemoPage" class="btn">체험하기</button>
+    <div data-aos="fade-down" class="catch">
+      핸듀만의 차별화된 기술, 당신만을 위한 서비스
     </div>
-    <div class="container2"
-    data-aos="fade-left">
-      <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
-      <div class="item-title2">핸듀 포트폴리오</div>
-      <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
-      <button @click="toPortfolio" class="btn">자세하게</button>
+    <div class="about-container">
+      <div class="container1" data-aos="fade-right">
+        <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
+        <div class="item-title1">OCR 손글씨 자동교정</div>
+        <div class="item-body1">
+          핸듀만의 기술로 높은 인식률을 자랑하는 OCR. <br />
+          손글씨 자동 교정을 체험해 보세요.
+        </div>
+        <button @click="toDemoPage" class="btn">체험하기</button>
+      </div>
+      <div class="container2" data-aos="fade-left">
+        <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
+        <div class="item-title2">핸듀 포트폴리오</div>
+        <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
+        <button @click="toPortfolio" class="btn">자세하게</button>
+      </div>
     </div>
     <AlertModal v-if="showModal" @close="showModal = false">
       <h3 slot="header">알림</h3>
@@ -34,7 +36,7 @@
 </template>
 
 <script>
-import AlertModal from './common/AlertModal.vue';
+import AlertModal from "./common/AlertModal.vue";
 
 export default {
   data() {
@@ -54,21 +56,25 @@ export default {
 
   components: {
     AlertModal,
-  }
+  },
 };
 </script>
 
 <style scoped>
 .wrapper {
-  width: 100%;
-  padding-top: 720px;
-  position: relative;
+  padding-top: 0;
   background-color: #e7e6e6;
+  text-align: center;
+}
+
+.about-container {
+  padding-top: 528.5px;
+  position: relative;
 }
 
 .container1 {
   position: absolute;
-  top: 250px;
+  top: 52px;
   right: 53.5vw;
   width: 500px;
   height: 374px;
@@ -78,7 +84,7 @@ export default {
 
 .container2 {
   position: absolute;
-  top: 250px;
+  top: 52px;
   height: 374px;
   left: 53.5vw;
   width: 500px;
@@ -101,19 +107,21 @@ export default {
 }
 
 .head {
-  position: absolute;
+  /* position: absolute;
   top: 62px;
-  left: 43vw;
+  left: 43vw; */
+  padding-top: 88px;
+  font-family: "NanumSquareAcr";
   font-size: 58px;
-  font-weight: 500;
-  text-align: center;
+  font-weight: 700;
 }
 
 .catch {
-  position: absolute;
+  /* position: absolute;
   top: 141px;
-  left: 37vw;
-  font-size: 20px;
+  left: 37vw; */
+  padding-top: 9px;
+  font-size: 26px;
   font-weight: 400;
 }
 

@@ -20,7 +20,7 @@ export default {
 
 <style>
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'NanumBarunGothic';
 }
 
 html {

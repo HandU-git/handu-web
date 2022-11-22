@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="white"></div>
-    <div data-aos="fade-down" class="grey"></div>
+    <div data-aos="fade-down" class="grey"> <h1>유튜브 영상</h1></div>
     <div data-aos="fade-up" class="item-container">
       <div class="item-title">TECHNOLOGY</div>
       <div class="item-subtitle">차별화된 OCR기술</div>
@@ -53,9 +53,10 @@ export default {};
 
 .item-title {
   position: relative;
-  top: 73px;
-  font-weight: 500;
-  font-size: 50px;
+  top: 61px;
+  font-family: 'NanumPen';
+  font-weight: 400;
+  font-size: 75px;
   height: 0;
 }
 

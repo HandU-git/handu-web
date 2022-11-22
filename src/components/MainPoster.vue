@@ -3,11 +3,12 @@
     <div class="user-image">
       <img src="../assets/main.png" alt="불러올 수 없음" />
     </div>
-    <div>
+    <!-- 글자 부분 이미지에 포함시켰음 -->
+    <!-- <div>
       <p class="text1">We Are HandU</p>
       <p class="text2">오직 당신만을 위한 AI</p>
       <hr class="straight" size="1" width="12.5%"/>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {};
   width: 100%;
 }
 
-.text1 {
+/* .text1 {
   position: absolute;
   color: #f4ebeb;
   font-weight: 500;
@@ -41,7 +42,7 @@ export default {};
   font-size: 1.7vw;
   top: 79.3%;
   left: 19.7%;
-}
+} */
 
 .straight {
   position: absolute;
