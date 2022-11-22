@@ -20,6 +20,6 @@ new Vue({
         duration: 1000,
         offset: 200,
       }) 
-    },1000)    
+    },500)    
   },
 }).$mount('#app')
