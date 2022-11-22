@@ -14,7 +14,7 @@ new Vue({
   vuetify,
   router,
   store,
-  mounted() {
+  created() {
     setTimeout(() => {
       AOS.init({
         duration: 1000,

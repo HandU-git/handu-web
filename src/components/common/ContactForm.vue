@@ -106,16 +106,17 @@ export default {
 
 <style scoped>
 .title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
-  line-height: 65px;
+  line-height: 53px;
   color: #312df4;
 }
 .straight {
-  width: 74px;
+  width: 197px;
 }
 
 .head {
+  padding-top: 27px;
   font-weight: 300;
   font-size: 40px;
 }
@@ -125,6 +126,7 @@ export default {
 }
 
 .agree {
+  padding-top: 18px;
   margin-bottom: 17px;
 }
 

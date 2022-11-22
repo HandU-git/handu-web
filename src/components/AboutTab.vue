@@ -1,37 +1,39 @@
 <template>
-  <div class="wrapper">
-    <div data-aos="fade-down" class="head">ABOUT</div>
-    <div data-aos="fade-down" class="catch">
-      핸듀만의 차별화된 기술, 당신만을 위한 서비스
-    </div>
-    <div class="about-container">
-      <div class="container1" data-aos="fade-right">
-        <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
-        <div class="item-title1">OCR 손글씨 자동교정</div>
-        <div class="item-body1">
-          핸듀만의 기술로 높은 인식률을 자랑하는 OCR. <br />
-          손글씨 자동 교정을 체험해 보세요.
-        </div>
-        <button @click="toDemoPage" class="btn">체험하기</button>
+  <div>
+    <div class="wrapper">
+      <div data-aos="fade-down" class="head">ABOUT</div>
+      <div data-aos="fade-down" class="catch">
+        핸듀만의 차별화된 기술, 당신만을 위한 서비스
       </div>
-      <div class="container2" data-aos="fade-left">
-        <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
-        <div class="item-title2">핸듀 포트폴리오</div>
-        <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
-        <button @click="toPortfolio" class="btn">자세하게</button>
+      <div class="about-container">
+        <div class="container1" data-aos="fade-right">
+          <img class="item-img1" src="../assets/ItmeOcr.png" alt="" />
+          <div class="item-title1">OCR 손글씨 자동교정</div>
+          <div class="item-body1">
+            핸듀만의 기술로 높은 인식률을 자랑하는 OCR. <br />
+            손글씨 자동 교정을 체험해 보세요.
+          </div>
+          <button @click="toDemoPage" class="btn">체험하기</button>
+        </div>
+        <div class="container2" data-aos="fade-left">
+          <img class="item-img2" src="../assets/KiniandLumi.png" alt="" />
+          <div class="item-title2">핸듀 포트폴리오</div>
+          <div class="item-body2">핸듀의 포트폴리오를 확인해보세요.</div>
+          <button @click="toPortfolio" class="btn">자세하게</button>
+        </div>
       </div>
     </div>
     <AlertModal v-if="showModal" @close="showModal = false">
-      <h3 slot="header">알림</h3>
-      <div slot="body">
-        준비중입니다.
-        <div style="text-align: right">
-          <v-icon @click="showModal = false" style="top: 20px; color: #392012"
-            >mdi-check</v-icon
-          >
+        <h3 slot="header">알림</h3>
+        <div slot="body">
+          준비중입니다.
+          <div style="text-align: right">
+            <v-icon @click="showModal = false" style="top: 20px; color: #392012"
+              >mdi-check</v-icon
+            >
+          </div>
         </div>
-      </div>
-    </AlertModal>
+      </AlertModal>
   </div>
 </template>
 

@@ -81,7 +81,7 @@ export default {};
 .straight1 {
   position: absolute;
   color: #000000;
-  top: 24.3%;
+  top: 23.1%;
   left: 15.7%;
 }
 

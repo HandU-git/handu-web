@@ -33,7 +33,7 @@ export default {
       const container = document.getElementById("map");
       const options = {
         center: new kakao.maps.LatLng(this.comPos.Lat, this.comPos.Lng),
-        level: 2,
+        level: 8,
       };
       this.map = new kakao.maps.Map(container, options);
       const markerPosition = new kakao.maps.LatLng(
