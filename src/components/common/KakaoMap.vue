@@ -5,7 +5,7 @@
       <div class="tel-container">
         <span class="tel">
           <span class="highlight">TEL:</span>
-          <span> 02-8474-9374</span>
+          <span> 0504-1353-7332</span>
         </span>
         <span class="email" style="padding-left: 6vw">
           <span class="highlight">E-mail:</span>
