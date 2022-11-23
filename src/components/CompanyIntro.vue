@@ -75,7 +75,7 @@ export default {};
   width: 30.2vw;
   top: 51.25%;
   left: 15.7%;
-  line-height: 22.98px;
+  line-height: 1.6vw;
 }
 
 .straight1 {
