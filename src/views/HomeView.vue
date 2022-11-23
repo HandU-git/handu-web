@@ -23,7 +23,6 @@ import AppFooter from '@/components/AppFooter.vue';
 import ContactTab from '@/components/ContactTab.vue';
 import SnsIcons from '@/components/common/SnsIcons.vue';
 
-
 export default {
     components: {
         MainPoster,

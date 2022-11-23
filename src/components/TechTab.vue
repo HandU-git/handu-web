@@ -1,7 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="white"></div>
-    <div data-aos="fade-down" class="grey"> <h1>유튜브 영상</h1></div>
+    <div data-aos="fade-down" class="grey">
+      <YoutubePlayerVue></YoutubePlayerVue>
+    </div>
     <div data-aos="fade-up" class="item-container">
       <div class="item-title">TECHNOLOGY</div>
       <div class="item-subtitle">차별화된 OCR기술</div>
@@ -14,7 +16,12 @@
 </template>
 
 <script>
-export default {};
+import YoutubePlayerVue from './common/YoutubePlayer.vue';
+export default {
+  components: {
+    YoutubePlayerVue,
+  }
+};
 </script>
 
 <style>
