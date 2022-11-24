@@ -1,13 +1,13 @@
 <template>
   <div>
-    <v-app-bar height="80" fixed>
+    <v-app-bar class="app-bar-container" :height="80" fixed>
       <v-container>
         <v-row>
-          <v-spacer></v-spacer>
+          <v-spacer class="spacer1"></v-spacer>
           <v-appbar-title>
             <ComLogo />
           </v-appbar-title>
-          <v-col v-for="item in items" v-bind:key="item.content" sm="2">
+          <v-col class="" v-for="item in items" v-bind:key="item.content">
             <div class="center" @click="scroll(item.position)">
               {{ item.content }}
             </div>
@@ -61,17 +61,15 @@ export default {
   methods: {
     calPosY(y) {
       let To = 10;
-      if(y < 3)
-        To += y * window.innerWidth * 0.5;
-      else
-        To += window.innerWidth + 720 * (y - 2);
-        console.log(To);
+      if (y < 3) To += y * window.innerWidth * 0.5;
+      else To += window.innerWidth + 720 * (y - 2);
+      console.log(To);
       return To;
     },
 
     async scroll(position) {
       if (this.$route.name === "portfolio") {
-        await router.push('/home');
+        await router.push("/home");
       }
       window.scrollTo(position.x, this.calPosY(position.y));
     },
@@ -90,4 +88,25 @@ export default {
   font-weight: 700;
   font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .spacer1 {
+    display: none;
+  }
+
+  .center{
+    font-size: 16px;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .center {
+    display: none;
+  }
+}
+
+
 </style>

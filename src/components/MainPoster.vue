@@ -21,6 +21,7 @@ export default {};
   width: 100%;
   position: relative;
   padding-top: 84px;
+  margin-bottom: -6px;
 }
 
 .user-wrap img {

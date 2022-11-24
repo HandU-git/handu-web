@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper">
+    <div class="about-wrapper">
       <div data-aos="fade-down" class="head">ABOUT</div>
       <div data-aos="fade-down" class="catch">
         핸듀만의 차별화된 기술, 당신만을 위한 서비스
@@ -24,16 +24,16 @@
       </div>
     </div>
     <AlertModal v-if="showModal" @close="showModal = false">
-        <h3 slot="header">알림</h3>
-        <div slot="body">
-          준비중입니다.
-          <div style="text-align: right">
-            <v-icon @click="showModal = false" style="top: 20px; color: #392012"
-              >mdi-check</v-icon
-            >
-          </div>
+      <h3 slot="header">알림</h3>
+      <div slot="body">
+        준비중입니다.
+        <div style="text-align: right">
+          <v-icon @click="showModal = false" style="top: 20px; color: #392012"
+            >mdi-check</v-icon
+          >
         </div>
-      </AlertModal>
+      </div>
+    </AlertModal>
   </div>
 </template>
 
@@ -63,43 +63,39 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
+.about-wrapper {
   padding-top: 0;
   background-color: #e7e6e6;
   text-align: center;
 }
 
 .about-container {
-  padding-top: 528.5px;
-  position: relative;
+  padding: 52px 0 100px 0;
+  margin: 0 70px 0 70px;
+  display: flex;
 }
 
 .container1 {
-  position: absolute;
-  top: 52px;
-  right: 53.5vw;
   width: 500px;
   height: 374px;
+  margin: auto;
   background-color: #fdfafa;
   border-radius: 5px;
 }
 
 .container2 {
-  position: absolute;
-  top: 52px;
-  height: 374px;
-  left: 53.5vw;
   width: 500px;
-  border-radius: 6px;
+  height: 374px;
+  margin: 30px auto;
+  border-radius: 5px;
   background-color: #fdfafa;
 }
 
 .btn {
-  position: absolute;
+  /* position: absolute; */
   font-weight: 500;
   font-size: 20px;
-  top: 290px;
-  left: 183px;
+  /* top: 290px; */
   border-radius: 6px;
   color: #fffbfb;
   background-color: #8195c9;
@@ -128,50 +124,95 @@ export default {
 }
 
 .item-img1 {
-  top: 46px;
-  left: 33%;
-  position: absolute;
+  padding-top: 46px;
   width: 160px;
 }
 
 .item-img2 {
-  position: absolute;
-  top: 39px;
-  left: 21%;
+  /* position: absolute; */
+  /* top: 39px; */
+  padding-top: 39px;
+  /* left: 21%; */
   width: 297px;
 }
 
 .item-title1 {
-  position: relative;
+  /* position: relative; */
   text-align: center;
-  top: 190px;
+  padding-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
 .item-title2 {
-  position: relative;
+  /* position: relative; */
   text-align: center;
-  top: 190px;
+  padding-top: 4px;
   font-size: 20px;
   font-weight: 700;
 }
 
 .item-body1 {
-  position: relative;
+  /* position: relative; */
   text-align: center;
-  top: 200px;
+  /* top: 200px; */
+  padding-top: 10px;
+  padding-bottom: 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
 }
 
 .item-body2 {
-  position: relative;
+  /* position: relative; */
   text-align: center;
-  top: 215px;
+  /* top: 215px; */
+  padding-top: 18px;
+  padding-bottom: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
+}
+
+@media screen and (max-width: 1250px) {
+  .about-container {
+    display: block;
+  }
+  .container2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .about-container {
+    margin: auto;
+  }
+  .container1, .container2 {
+    width: 77vw;
+    height: 350px;
+  }
+
+  .item-title1, .item-title2, .item-body1, .item-body2 {
+    font-size: 4vw;
+    line-height: 4.2vw;
+  }
+
+  .item-body2 {
+    padding-bottom: 4vw;
+  }
+  .btn {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .head {
+    font-size: 40px;
+  }
+
+  .catch {
+    font-size: 20px;
+  }
+
 }
 </style>

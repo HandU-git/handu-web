@@ -6,8 +6,6 @@
       width="200"
     />
   </router-link>
-
-
 </template>
 
 <style scoped>

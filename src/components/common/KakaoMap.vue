@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="map-wrapper">
     <div>
       <div id="map"></div>
       <div class="tel-container">
@@ -7,7 +7,8 @@
           <span class="highlight">TEL:</span>
           <span> 0504-1353-7332</span>
         </span>
-        <span class="email" style="padding-left: 6vw">
+        <br class="br1"/>
+        <span class="email" style="padding-left: 2vw">
           <span class="highlight">E-mail:</span>
           <span> yap030@handu.io</span>
         </span>
@@ -24,7 +25,7 @@ export default {
       comPos: {
         Lat: 37.469895562162755,
         Lng: 126.93360346160966,
-      }
+      },
     };
   },
   methods: {
@@ -44,11 +45,12 @@ export default {
       });
       marker.setMap(this.map);
       // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
-      var iwContent = '<div style="padding:5px; height:100px; width:280px">' +
-        '<h3>(주)핸듀</h3>' +
-        '<div>서울특별시 관악구 호암로24길 6 404호</div>' +
-        `<a href="https://map.kakao.com/link/to/핸듀,${this.comPos.Lat},${this.comPos.Lng}"` + 
-        'style="color: #F9C042" ">길찾기</a></div>',
+      var iwContent =
+          '<div style="padding:5px; height:100px; width:280px">' +
+          "<h3>(주)핸듀</h3>" +
+          "<div>서울특별시 관악구 호암로24길 6 404호</div>" +
+          `<a href="https://map.kakao.com/link/to/핸듀,${this.comPos.Lat},${this.comPos.Lng}"` +
+          'style="color: #F9C042" ">길찾기</a></div>',
         iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
       var infowindow = new kakao.maps.InfoWindow({
         content: iwContent,
@@ -80,13 +82,23 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-  width: 42.1vw;
+.map-wrapper {
+  width: 46vw;
 }
 
 #map {
-  width: 42.1vw;
+  width: 46vw;
   height: 488px;
+}
+
+@media screen and (max-width: 1250px) {
+  #map {
+    width: 80vw;
+    height: 488px;
+  }
+  .map-wrapper {
+  width: 80vw;
+}
 }
 
 .tel {
@@ -98,11 +110,22 @@ export default {
 }
 
 .highlight {
-  font-family: 'NanumBarunGothicBold';
+  font-family: "NanumBarunGothicBold";
 }
 
 .tel-container {
   padding-top: 25px;
   text-align: center;
 }
+
+.br1 {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .br1 {
+    display: inline;
+  }
+}
+
 </style>

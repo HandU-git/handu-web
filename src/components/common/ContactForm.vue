@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contact-form">
     <div class="title">Contact Us</div>
     <hr class="straight" />
     <div class="head"><span class="handu">핸듀</span>는 항상 열려있습니다.</div>
@@ -16,12 +16,12 @@
           top: 2px;
         "
       />
-      <label for="chkBox" style="font-size: 20px"
+      <label for="chkBox"
         >개인정보 처리방침에 동의합니다. (필수)</label
       >
     </div>
     <form ref="form" @submit.prevent="sendEmail">
-      <div style="display: flex; margin-bottom: 11px">
+      <div class="name-email-container">
         <input
           class="input-name"
           type="text"
@@ -128,6 +128,7 @@ export default {
 .agree {
   padding-top: 18px;
   margin-bottom: 17px;
+  font-size: 20px;
 }
 
 .agree :hover {
@@ -140,21 +141,22 @@ input {
   border-radius: 4px;
   outline-color: #f9c042;
   height: 48px;
+  font-size: 20px;
 }
 
 textarea {
   border: 1px solid #000000;
   border-radius: 4px;
+  font-size: 20px;
   outline-color: #f9c042;
 }
 
+
 .input-name {
-  font-size: 20px;
   width: 210px;
   margin-right: 33px;
 }
 .input-email {
-  font-size: 20px;
   width: 210px;
 }
 
@@ -177,5 +179,37 @@ textarea {
   background-color: #8195c9;
   border-radius: 30px;
   color: #fff;
+}
+
+.name-email-container {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.contact-form {
+  width: 453px;
+}
+
+@media screen and (max-width: 650px) {
+  .name-email-container {
+    display: block;
+  }
+  .input-name, .input-email, .input-content, .input-title {
+    width: 70vw;
+  }
+  .input-name{
+    margin-bottom: 11px;
+  }
+
+  .contact-form {
+    width: 70vw;
+  }
+
+  .head {
+    font-size: 20px;
+  }
+  .agree {
+    font-size: 16px;
+  }
 }
 </style>

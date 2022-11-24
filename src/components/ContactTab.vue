@@ -53,8 +53,6 @@ export default {
 <style scoped>
 .wrapper {
   display: flex;
-  position: relative;
-  width: 100vw;
   height: 720px;
   margin: 0px;
   padding: 0px;
@@ -62,10 +60,43 @@ export default {
 }
 
 .form {
-  padding: 64px 9vw 54px 11vw;
+  padding: 64px auto 54px 0;
+  margin: auto;
+  margin-right: 0;
 }
 
 .map {
-  padding: 64px 39px 86px 0px;
+  padding: 64px 0 54px 0;
+  margin: auto 50px;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .form {
+    margin-right: auto;
+    padding-top: 64px;
+  }
+  .map {
+    padding-top: 64px;
+  }
+
+  .wrapper {
+  display: block;
+  width: 100%;
+  height: 1450px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #faf7f7;
+}
+
+@media screen and (max-width: 650px) {
+  .map {
+    padding-top: 35px;
+  }
+
+  .form {
+  }
+}
+  
 }
 </style>

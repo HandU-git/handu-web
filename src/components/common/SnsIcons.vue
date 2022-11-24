@@ -68,4 +68,12 @@ export default {
   left: 95%;
   cursor: pointer;
 }
+@media screen and (max-width: 1250px) {
+  .naver, .kakao, .instagram {
+    display: none;
+  }
+}
+
+
+
 </style>

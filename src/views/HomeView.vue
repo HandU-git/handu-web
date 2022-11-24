@@ -5,7 +5,7 @@
     data-aos-once="true"
     data-aos-offset="10">
     <MainPoster/></div>
-    <CompanyIntro/>
+    <CompanyIntro class="company-intro"/>
     <AboutTab/>
     <TechTab/>
     <ContactTab/>
@@ -36,5 +36,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+@media screen and (max-width: 650px) {
+  .company-intro {
+    display: none;
+  }
+}
 </style>

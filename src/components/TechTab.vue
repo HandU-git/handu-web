@@ -8,19 +8,19 @@
       <div class="item-title">TECHNOLOGY</div>
       <div class="item-subtitle">차별화된 OCR기술</div>
       <div class="item-body">
-        타사 대비 높은 유아 손글씨 인식률<br />
-        핸듀 OCR 서비스 (인식률 95%)
+        <div>타사 대비 높은 유아 손글씨 인식률</div>
+        <div>핸듀 OCR 서비스 (인식률 95%)</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import YoutubePlayerVue from './common/YoutubePlayer.vue';
+import YoutubePlayerVue from "./common/YoutubePlayer.vue";
 export default {
   components: {
     YoutubePlayerVue,
-  }
+  },
 };
 </script>
 
@@ -59,27 +59,49 @@ export default {
 }
 
 .item-title {
-  position: relative;
-  top: 61px;
-  font-family: 'NanumPen';
+  font-family: "NanumPen";
   font-weight: 400;
   font-size: 75px;
-  height: 0;
+  margin-top: 61px;
 }
 
 .item-subtitle {
-  position: relative;
-  top: 142px;
   font-weight: 350;
   font-size: 24px;
-  height: 0;
 }
 
 .item-body {
-  position: relative;
-  top: 209px;
   font-weight: 400;
   font-size: 20px;
-
+  margin-top: 39px;
 }
+
+@media screen and (max-width: 950px) {
+  .item-title {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  .item-subtitle {
+    font-size: 1rem;
+  }
+
+  .item-body {
+    font-size: 0.8rem;
+  }
+
+  .item-container{
+    top: 540px;
+    left: 25vw;
+    width: 50vw;
+    height: 170px;
+    background-color: #ffffff;
+  }
+
+  .grey {
+    width: 76.4vw;
+  }
+}
+
+
 </style>
