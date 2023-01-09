@@ -44,6 +44,14 @@
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 650px) {
+  .modal-container {
+  width: 250px;
+  margin: 0px 10;
+  padding: 20px 10px;
+}
+}
+
 .modal-header h3 {
   margin-top: 0;
   color: #F9C042;

@@ -4,19 +4,33 @@
     data-aos="fade-right"
     data-aos-offset="300"
       class="form"
-      @notAgreed="modalOn"
+      @notAgreed="warnModalOn"
+      @success="sucessModalOn"
     ></contact-form>
     <kakao-map 
     data-aos="fade-left"
     data-aos-offset="300"
     class="map"></kakao-map>
-    <AlertModal v-if="showModal" @close="showModal = false">
+    <AlertModal v-if="warnModal" @close="warnModal = false">
       <h3 slot="header">알림</h3>
       <div slot="body">
         먼저 개인정보 처리 약관에 동의해야 합니다.
         <div style="text-align: right">
           <v-icon
-          @click="showModal = false"
+          @click="warnModal = false"
+          style="top: 20px; color: #392012"
+          >mdi-check</v-icon
+        >  
+        </div>
+      </div>
+    </AlertModal>
+    <AlertModal v-if="sucessModal" @close="sucessModal = false">
+      <h3 slot="header">알림</h3>
+      <div slot="body">
+        이메일이 성공적으로 전송되었습니다.
+        <div style="text-align: right">
+          <v-icon
+          @click="sucessModal = false"
           style="top: 20px; color: #392012"
           >mdi-check</v-icon
         >  
@@ -34,7 +48,8 @@ import AlertModal from "./common/AlertModal.vue";
 export default {
   data() {
     return {
-      showModal: false,
+      warnModal: false,
+      sucessModal: false,
     };
   },
   components: {
@@ -43,9 +58,12 @@ export default {
     AlertModal,
   },
   methods: {
-    modalOn() {
-      this.showModal = !this.showModal
-    }
+    warnModalOn() {
+      this.warnModal = !this.warnModal;
+    },
+    sucessModalOn() {
+      this.sucessModal = !this.sucessModal;
+    },
   },
 };
 </script>

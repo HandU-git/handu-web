@@ -90,6 +90,7 @@ export default {
           .then(
             (result) => {
               console.log("SUCCESS!", result.text);
+              this.$emit("success");
             },
             (error) => {
               console.log("FAILED...", error.text);
@@ -209,7 +210,7 @@ textarea {
     font-size: 20px;
   }
   .agree {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 </style>
